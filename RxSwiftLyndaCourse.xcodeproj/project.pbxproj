@@ -18,6 +18,7 @@
 		532FECE11DB6D63C0003E7B6 /* RxSwiftLyndaCourse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxSwiftLyndaCourse.h; sourceTree = "<group>"; };
 		532FECE21DB6D63C0003E7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53EC874B1DB6D6DD0011260F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53EC874D1DB6D7D80011260F /* ObservableSequences.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ObservableSequences.playground; sourceTree = "<group>"; };
 		66FEDA926E74711497D08E84 /* Pods-RxSwiftLyndaCourse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLyndaCourse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftLyndaCourse/Pods-RxSwiftLyndaCourse.debug.xcconfig"; sourceTree = "<group>"; };
 		E07395A10F017236F3D7A301 /* Pods-RxSwiftLyndaCourse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLyndaCourse.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftLyndaCourse/Pods-RxSwiftLyndaCourse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,8 +57,9 @@
 		532FECE01DB6D63C0003E7B6 /* RxSwiftLyndaCourse */ = {
 			isa = PBXGroup;
 			children = (
-				532FECE11DB6D63C0003E7B6 /* RxSwiftLyndaCourse.h */,
 				532FECE21DB6D63C0003E7B6 /* Info.plist */,
+				53EC874D1DB6D7D80011260F /* ObservableSequences.playground */,
+				532FECE11DB6D63C0003E7B6 /* RxSwiftLyndaCourse.h */,
 			);
 			path = RxSwiftLyndaCourse;
 			sourceTree = "<group>";
@@ -219,6 +221,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -272,6 +275,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
