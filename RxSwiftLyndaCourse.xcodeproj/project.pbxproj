@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A008ACBF6C9DBA696E3AC5 /* Pods_RxSwiftLyndaCourse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F872216AC49B43A082FD13 /* Pods_RxSwiftLyndaCourse.framework */; };
 		532FECE31DB6D63C0003E7B6 /* RxSwiftLyndaCourse.h in Headers */ = {isa = PBXBuildFile; fileRef = 532FECE11DB6D63C0003E7B6 /* RxSwiftLyndaCourse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53EC874C1DB6D6DD0011260F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EC874B1DB6D6DD0011260F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34F872216AC49B43A082FD13 /* Pods_RxSwiftLyndaCourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftLyndaCourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		532FECDE1DB6D63C0003E7B6 /* RxSwiftLyndaCourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwiftLyndaCourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		532FECE11DB6D63C0003E7B6 /* RxSwiftLyndaCourse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxSwiftLyndaCourse.h; sourceTree = "<group>"; };
 		532FECE21DB6D63C0003E7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53EC874B1DB6D6DD0011260F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66FEDA926E74711497D08E84 /* Pods-RxSwiftLyndaCourse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLyndaCourse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftLyndaCourse/Pods-RxSwiftLyndaCourse.debug.xcconfig"; sourceTree = "<group>"; };
+		E07395A10F017236F3D7A301 /* Pods-RxSwiftLyndaCourse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLyndaCourse.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftLyndaCourse/Pods-RxSwiftLyndaCourse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +27,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EC874C1DB6D6DD0011260F /* Foundation.framework in Frameworks */,
+				22A008ACBF6C9DBA696E3AC5 /* Pods_RxSwiftLyndaCourse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +40,8 @@
 			children = (
 				532FECE01DB6D63C0003E7B6 /* RxSwiftLyndaCourse */,
 				532FECDF1DB6D63C0003E7B6 /* Products */,
+				6828F955CB08D965147B358C /* Pods */,
+				D4445ADAF00D7BBEEC25F816 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +62,24 @@
 			path = RxSwiftLyndaCourse;
 			sourceTree = "<group>";
 		};
+		6828F955CB08D965147B358C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66FEDA926E74711497D08E84 /* Pods-RxSwiftLyndaCourse.debug.xcconfig */,
+				E07395A10F017236F3D7A301 /* Pods-RxSwiftLyndaCourse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D4445ADAF00D7BBEEC25F816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53EC874B1DB6D6DD0011260F /* Foundation.framework */,
+				34F872216AC49B43A082FD13 /* Pods_RxSwiftLyndaCourse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -70,10 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 532FECE61DB6D63C0003E7B6 /* Build configuration list for PBXNativeTarget "RxSwiftLyndaCourse" */;
 			buildPhases = (
+				3F66BB5EC2CCBB7EC9F21367 /* [CP] Check Pods Manifest.lock */,
 				532FECD91DB6D63C0003E7B6 /* Sources */,
 				532FECDA1DB6D63C0003E7B6 /* Frameworks */,
 				532FECDB1DB6D63C0003E7B6 /* Headers */,
 				532FECDC1DB6D63C0003E7B6 /* Resources */,
+				8466E0552E3DBE07CBA1BA90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +156,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F66BB5EC2CCBB7EC9F21367 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8466E0552E3DBE07CBA1BA90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftLyndaCourse/Pods-RxSwiftLyndaCourse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		532FECD91DB6D63C0003E7B6 /* Sources */ = {
@@ -239,6 +302,7 @@
 		};
 		532FECE71DB6D63C0003E7B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FEDA926E74711497D08E84 /* Pods-RxSwiftLyndaCourse.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -258,6 +322,7 @@
 		};
 		532FECE81DB6D63C0003E7B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E07395A10F017236F3D7A301 /* Pods-RxSwiftLyndaCourse.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -294,6 +359,7 @@
 				532FECE81DB6D63C0003E7B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
