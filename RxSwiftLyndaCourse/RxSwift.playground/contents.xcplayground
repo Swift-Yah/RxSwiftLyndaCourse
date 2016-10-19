@@ -7,5 +7,6 @@
         <page name='FilterObservableSequences'/>
         <page name='CombineObservableSequences'/>
         <page name='PerformSideEffects'/>
+        <page name='UseSchedulers'/>
     </pages>
 </playground>
