@@ -3,5 +3,6 @@
     <pages>
         <page name='ObservableSequences'/>
         <page name='WorkWithSubjects'/>
+        <page name='TransformObservableSequences'/>
     </pages>
 </playground>
