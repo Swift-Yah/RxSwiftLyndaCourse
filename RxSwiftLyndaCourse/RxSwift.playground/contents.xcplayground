@@ -4,5 +4,6 @@
         <page name='ObservableSequences'/>
         <page name='WorkWithSubjects'/>
         <page name='TransformObservableSequences'/>
+        <page name='FilterObservableSequences'/>
     </pages>
 </playground>
