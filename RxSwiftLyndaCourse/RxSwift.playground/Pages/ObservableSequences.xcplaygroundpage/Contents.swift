@@ -16,13 +16,13 @@ exampleOf("just") {
 exampleOf("of") {
     let observable = Observable.of(1, 2, 3)
 
-    observable.subscribe {
+    observable.subscribe({
         print($0)
-    }
+    })
 
-    observable.subscribe {
+    observable.subscribe({
         print($0)
-    }
+    })
 }
 
 exampleOf("from") {
