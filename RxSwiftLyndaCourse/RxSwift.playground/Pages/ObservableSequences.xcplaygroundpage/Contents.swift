@@ -25,6 +25,7 @@ exampleOf("of") {
     })
 }
 
+// this was toObservable operator in Swift 2.2
 exampleOf("from") {
     let disposeBag = DisposeBag()
 
@@ -39,10 +40,10 @@ exampleOf("from") {
 
 exampleOf("error") {
     enum RxError: Error {
-        case Test
+        case test
     }
 
-    Observable<Int>.error(RxError.Test).subscribe({
+    Observable<Int>.error(RxError.test).subscribe({
         print($0)
     })
 }
