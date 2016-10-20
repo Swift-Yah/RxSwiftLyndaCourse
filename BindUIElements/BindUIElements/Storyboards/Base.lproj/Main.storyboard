@@ -138,6 +138,25 @@
                             <constraint firstItem="zqh-ZW-KjN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="IOm-AC-DO8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="j4n-WU-srh" id="tnN-gp-0u2"/>
+                        <outlet property="button" destination="9gg-Ya-E8c" id="88s-qK-6e8"/>
+                        <outlet property="buttonLabel" destination="3ZC-WY-w99" id="CEF-F6-7al"/>
+                        <outlet property="datePicker" destination="6Hn-r2-Aq4" id="CK5-07-SHs"/>
+                        <outlet property="datePickerLabel" destination="rrN-mW-n0t" id="DYK-AX-Sjq"/>
+                        <outlet property="progressView" destination="5Ka-XL-307" id="yG0-Hs-gnL"/>
+                        <outlet property="segmentedControl" destination="X0V-mx-djI" id="uDo-hW-keL"/>
+                        <outlet property="segmentedControlLabel" destination="Svi-Ix-8bS" id="rFE-Ge-nWf"/>
+                        <outlet property="slider" destination="nGI-Jt-AIK" id="MB2-Ro-XzJ"/>
+                        <outlet property="stepper" destination="ApJ-Sk-xuB" id="KAi-cQ-Stk"/>
+                        <outlet property="stepperLabel" destination="4X6-Xn-AVr" id="xfa-fX-GaE"/>
+                        <outlet property="switch" destination="mrA-r2-j71" id="gVe-n1-bMA"/>
+                        <outlet property="tapGestureRecognizer" destination="XLB-Eb-QUR" id="Rec-K1-2I9"/>
+                        <outlet property="textField" destination="6pV-uK-th6" id="FC1-Vy-2QQ"/>
+                        <outlet property="textFieldLabel" destination="1Ap-Tb-QCU" id="gAA-as-VUo"/>
+                        <outlet property="textView" destination="rLG-gF-0cN" id="d3P-Xd-OjA"/>
+                        <outlet property="textViewLabel" destination="wqX-Ul-b6K" id="90E-YA-8ns"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="XLB-Eb-QUR"/>
