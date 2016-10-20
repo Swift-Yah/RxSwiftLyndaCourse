@@ -30,9 +30,9 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ap-Tb-QCU">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ap-Tb-QCU">
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="24" id="V6k-nW-8Aw"/>
+                                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="V6k-nW-8Aw"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -42,7 +42,7 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tmM-mS-QWM">
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rLG-gF-0cN" customClass="BorderedTextView" customModule="BindUIElements" customModuleProvider="target">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Text view" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rLG-gF-0cN" customClass="BorderedTextView" customModule="BindUIElements" customModuleProvider="target">
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="1CE-Ad-dDp"/>
@@ -50,11 +50,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqX-Ul-b6K">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqX-Ul-b6K">
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="24" id="0ua-NX-eCd"/>
+                                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="0ua-NX-eCd"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -72,9 +72,9 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZC-WY-w99">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZC-WY-w99">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="WkR-8h-Jkj"/>
+                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="WkR-8h-Jkj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -88,7 +88,7 @@
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svi-Ix-8bS">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="agR-xc-HXP"/>
+                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="agR-xc-HXP"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -122,7 +122,7 @@
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrN-mW-n0t">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="9Wt-9b-8Ct"/>
+                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="9Wt-9b-8Ct"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -137,6 +137,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="zqh-ZW-KjN" secondAttribute="trailing" id="Hsx-YA-5WN"/>
                             <constraint firstItem="zqh-ZW-KjN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="IOm-AC-DO8"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XLB-Eb-QUR" appends="YES" id="2Lj-Os-yBB"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="activityIndicatorView" destination="j4n-WU-srh" id="tnN-gp-0u2"/>
@@ -150,12 +153,12 @@
                         <outlet property="slider" destination="nGI-Jt-AIK" id="MB2-Ro-XzJ"/>
                         <outlet property="stepper" destination="ApJ-Sk-xuB" id="KAi-cQ-Stk"/>
                         <outlet property="stepperLabel" destination="4X6-Xn-AVr" id="xfa-fX-GaE"/>
-                        <outlet property="switch" destination="mrA-r2-j71" id="gVe-n1-bMA"/>
                         <outlet property="tapGestureRecognizer" destination="XLB-Eb-QUR" id="Rec-K1-2I9"/>
                         <outlet property="textField" destination="6pV-uK-th6" id="FC1-Vy-2QQ"/>
                         <outlet property="textFieldLabel" destination="1Ap-Tb-QCU" id="gAA-as-VUo"/>
                         <outlet property="textView" destination="rLG-gF-0cN" id="d3P-Xd-OjA"/>
                         <outlet property="textViewLabel" destination="wqX-Ul-b6K" id="90E-YA-8ns"/>
+                        <outlet property="uiSwitch" destination="mrA-r2-j71" id="8B4-rR-j5s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
