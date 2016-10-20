@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E6E872D6CD796EACB52E886 /* Pods_Rx_RxSwiftLyndaCourse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2B5757839F7BE90567EF6C /* Pods_Rx_RxSwiftLyndaCourse.framework */; };
 		22A008ACBF6C9DBA696E3AC5 /* Pods_RxSwiftLyndaCourse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F872216AC49B43A082FD13 /* Pods_RxSwiftLyndaCourse.framework */; };
 		532FECE31DB6D63C0003E7B6 /* RxSwiftLyndaCourse.h in Headers */ = {isa = PBXBuildFile; fileRef = 532FECE11DB6D63C0003E7B6 /* RxSwiftLyndaCourse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53EC874C1DB6D6DD0011260F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EC874B1DB6D6DD0011260F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D28D8F5078025D28E37F641 /* Pods-Rx-RxSwiftLyndaCourse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx-RxSwiftLyndaCourse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rx-RxSwiftLyndaCourse/Pods-Rx-RxSwiftLyndaCourse.debug.xcconfig"; sourceTree = "<group>"; };
 		34F872216AC49B43A082FD13 /* Pods_RxSwiftLyndaCourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftLyndaCourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		532FECDE1DB6D63C0003E7B6 /* RxSwiftLyndaCourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwiftLyndaCourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		532FECE11DB6D63C0003E7B6 /* RxSwiftLyndaCourse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxSwiftLyndaCourse.h; sourceTree = "<group>"; };
@@ -20,7 +22,9 @@
 		53EC874B1DB6D6DD0011260F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		53EC874D1DB6D7D80011260F /* RxSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwift.playground; sourceTree = "<group>"; };
 		66FEDA926E74711497D08E84 /* Pods-RxSwiftLyndaCourse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLyndaCourse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftLyndaCourse/Pods-RxSwiftLyndaCourse.debug.xcconfig"; sourceTree = "<group>"; };
+		9B2B5757839F7BE90567EF6C /* Pods_Rx_RxSwiftLyndaCourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rx_RxSwiftLyndaCourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07395A10F017236F3D7A301 /* Pods-RxSwiftLyndaCourse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLyndaCourse.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftLyndaCourse/Pods-RxSwiftLyndaCourse.release.xcconfig"; sourceTree = "<group>"; };
+		E4120D05101DAFC828A96409 /* Pods-Rx-RxSwiftLyndaCourse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx-RxSwiftLyndaCourse.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rx-RxSwiftLyndaCourse/Pods-Rx-RxSwiftLyndaCourse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 			files = (
 				53EC874C1DB6D6DD0011260F /* Foundation.framework in Frameworks */,
 				22A008ACBF6C9DBA696E3AC5 /* Pods_RxSwiftLyndaCourse.framework in Frameworks */,
+				1E6E872D6CD796EACB52E886 /* Pods_Rx_RxSwiftLyndaCourse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,8 @@
 			children = (
 				66FEDA926E74711497D08E84 /* Pods-RxSwiftLyndaCourse.debug.xcconfig */,
 				E07395A10F017236F3D7A301 /* Pods-RxSwiftLyndaCourse.release.xcconfig */,
+				0D28D8F5078025D28E37F641 /* Pods-Rx-RxSwiftLyndaCourse.debug.xcconfig */,
+				E4120D05101DAFC828A96409 /* Pods-Rx-RxSwiftLyndaCourse.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -78,6 +85,7 @@
 			children = (
 				53EC874B1DB6D6DD0011260F /* Foundation.framework */,
 				34F872216AC49B43A082FD13 /* Pods_RxSwiftLyndaCourse.framework */,
+				9B2B5757839F7BE90567EF6C /* Pods_Rx_RxSwiftLyndaCourse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

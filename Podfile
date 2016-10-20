@@ -1,8 +1,15 @@
 platform :ios, '10.0'
 
-target 'RxSwiftLyndaCourse' do
-    use_frameworks!
+use_frameworks!
 
-    pod 'RxCocoa', '3.0.0-rc.1'
-    pod 'RxSwift', '3.0.0-rc.1'
+workspace 'RxSwiftLyndaCourse'
+
+pod 'RxCocoa', '3.0.0-rc.1'
+pod 'RxSwift', '3.0.0-rc.1'
+
+target 'RxSwiftLyndaCourse' do
+end
+
+target 'BindUIElements' do
+    project 'BindUIElements/BindUIElements.xcodeproj'
 end
