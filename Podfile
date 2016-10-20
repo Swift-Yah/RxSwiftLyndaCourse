@@ -15,3 +15,7 @@ target 'BindUIElements' do
 
     pod 'UIColor_Hex_Swift'
 end
+
+target 'BindUIElementsTests' do
+    project 'BindUIElements/BindUIElements.xcodeproj'
+end
