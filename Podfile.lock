@@ -2,15 +2,18 @@ PODS:
   - RxCocoa (3.0.0-rc.1):
     - RxSwift (~> 3.0.0-rc.1)
   - RxSwift (3.0.0-rc.1)
+  - UIColor_Hex_Swift (3.0.2)
 
 DEPENDENCIES:
   - RxCocoa (= 3.0.0-rc.1)
   - RxSwift (= 3.0.0-rc.1)
+  - UIColor_Hex_Swift
 
 SPEC CHECKSUMS:
   RxCocoa: e72a074a7f38896ec0382d096df5f58df10115c7
   RxSwift: d7a3819dd71789c473e3cbf1a0c02d58b2692739
+  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: a202eedaf1dfdbdd51f4826686f3173a723f1316
+PODFILE CHECKSUM: b560ae0f1668e8c65ddff840c654191cc4965ae4
 
 COCOAPODS: 1.1.0.rc.3

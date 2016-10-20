@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5324A9911DB94152005AE0B7 /* BorderedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5324A9901DB94152005AE0B7 /* BorderedTextView.swift */; };
 		53B9C7CB1DB90C5A0003C8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B9C7CA1DB90C5A0003C8BD /* AppDelegate.swift */; };
 		53B9C7CD1DB90C5A0003C8BD /* BindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B9C7CC1DB90C5A0003C8BD /* BindController.swift */; };
 		53B9C7D01DB90C5A0003C8BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B9C7CE1DB90C5A0003C8BD /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2077E8A5DD6CEE54FAB567AA /* Pods_BindUIElements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BindUIElements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5324A9901DB94152005AE0B7 /* BorderedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedTextView.swift; sourceTree = "<group>"; };
 		53B9C7C71DB90C5A0003C8BD /* BindUIElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BindUIElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B9C7CA1DB90C5A0003C8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53B9C7CC1DB90C5A0003C8BD /* BindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5324A98F1DB94122005AE0B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5324A9901DB94152005AE0B7 /* BorderedTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		53B9C7BE1DB90C5A0003C8BD = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 				53B9C7EB1DB911260003C8BD /* Controllers */,
 				53B9C7D61DB90C5A0003C8BD /* Info.plist */,
 				53B9C7EC1DB9112E0003C8BD /* Storyboards */,
+				5324A98F1DB94122005AE0B7 /* Views */,
 			);
 			path = BindUIElements;
 			sourceTree = "<group>";
@@ -301,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53B9C7CD1DB90C5A0003C8BD /* BindController.swift in Sources */,
+				5324A9911DB94152005AE0B7 /* BorderedTextView.swift in Sources */,
 				53B9C7CB1DB90C5A0003C8BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +373,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -411,6 +424,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -440,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A79361B6EB45C6D3E4665263 /* Pods-BindUIElements.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LQ5WW9469F;
 				INFOPLIST_FILE = BindUIElements/Info.plist;
@@ -454,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C539263688EF6C160610FCE /* Pods-BindUIElements.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LQ5WW9469F;
 				INFOPLIST_FILE = BindUIElements/Info.plist;
@@ -467,7 +483,7 @@
 		53B9C7E81DB90C5A0003C8BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = LQ5WW9469F;
 				INFOPLIST_FILE = BindUIElementsTests/Info.plist;
@@ -482,7 +498,7 @@
 		53B9C7E91DB90C5A0003C8BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = LQ5WW9469F;
 				INFOPLIST_FILE = BindUIElementsTests/Info.plist;
