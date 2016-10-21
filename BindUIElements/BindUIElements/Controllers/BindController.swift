@@ -82,6 +82,27 @@ private extension BindController {
                 self.view.layoutIfNeeded()
             }
         }).addDisposableTo(disposeBag)
+
+        segmentedControl.rx.value.asDriver().skip(1).drive(onNext: { [unowned self] in
+            self.segmentedControlLabel.text = "Selected segment: \($0)"
+
+            UIView.animate(withDuration: 0.35) {
+                self.view.layoutIfNeeded()
+            }
+        }).addDisposableTo(disposeBag)
+
+        slider.rx.value.asDriver().drive(progressView.rx.progress).addDisposableTo(disposeBag)
+
+        uiSwitch.rx.value.asDriver().map({ !$0 }).drive(activityIndicatorView.rx.hidden).addDisposableTo(disposeBag)
+        uiSwitch.rx.value.asDriver().drive(activityIndicatorView.rx.animating).addDisposableTo(disposeBag)
+
+        stepper.rx.value.asDriver().map(Int.init).map(String.init).drive(stepperLabel.rx.text).addDisposableTo(disposeBag)
+
+        datePicker.rx.date.asDriver().map({ [unowned self] in
+            self.dateFormatter.string(from: $0)
+        })
+            .map({ "Selected date: \($0)" })
+            .drive(datePickerLabel.rx.text).addDisposableTo(disposeBag)
     }
 }
 
