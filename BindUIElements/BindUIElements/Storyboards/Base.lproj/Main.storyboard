@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g3H-uE-icM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -120,11 +120,11 @@
                                             <!--2016-10-20 17:10:20 +0000-->
                                         </date>
                                     </datePicker>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrN-mW-n0t">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrN-mW-n0t">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" placeholder="YES" id="9Wt-9b-8Ct"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -165,6 +165,59 @@
                 <tapGestureRecognizer id="XLB-Eb-QUR"/>
             </objects>
             <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
+        </scene>
+        <!--Data Controller-->
+        <scene sceneID="cbd-2R-Oo5">
+            <objects>
+                <viewController id="g3H-uE-icM" customClass="DataController" customModule="BindUIElements" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aLn-4C-XlL"/>
+                        <viewControllerLayoutGuide type="bottom" id="JhW-4G-1od"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RHZ-PM-ykq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text field" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ziB-JL-vO7">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIC-k7-3Kq">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Tap Me"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kIC-k7-3Kq" secondAttribute="trailing" id="S3s-rt-ylg"/>
+                            <constraint firstItem="kIC-k7-3Kq" firstAttribute="top" secondItem="ziB-JL-vO7" secondAttribute="bottom" constant="8" symbolic="YES" id="hgz-iV-j1S"/>
+                            <constraint firstItem="ziB-JL-vO7" firstAttribute="leading" secondItem="RHZ-PM-ykq" secondAttribute="leadingMargin" id="kaT-xm-Ro2"/>
+                            <constraint firstItem="kIC-k7-3Kq" firstAttribute="leading" secondItem="RHZ-PM-ykq" secondAttribute="leadingMargin" id="meA-LP-Amf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ziB-JL-vO7" secondAttribute="trailing" id="s4f-dM-eWe"/>
+                            <constraint firstItem="ziB-JL-vO7" firstAttribute="top" secondItem="aLn-4C-XlL" secondAttribute="bottom" constant="8" symbolic="YES" id="uIM-MG-YkM"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fF5-G0-fvc" appends="YES" id="6bw-jY-Isu"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="kIC-k7-3Kq" id="kyO-zp-ui8"/>
+                        <outlet property="tapGestureRecognizer" destination="fF5-G0-fvc" id="r2p-BB-WIL"/>
+                        <outlet property="textField" destination="ziB-JL-vO7" id="zfv-aA-qSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTp-rk-Oxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fF5-G0-fvc"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="138"/>
         </scene>
     </scenes>
 </document>
