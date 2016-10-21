@@ -15,6 +15,8 @@
 		5367A7EB1DBA54A400E5B788 /* TitledHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367A7EA1DBA54A400E5B788 /* TitledHeaderView.swift */; };
 		5367A7ED1DBA55BB00E5B788 /* TitledCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367A7EC1DBA55BB00E5B788 /* TitledCellView.swift */; };
 		5367A7F21DBA5C6900E5B788 /* AnimatedSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5367A7F11DBA5C6900E5B788 /* AnimatedSectionModel.swift */; };
+		536F271B1DBA9392000E6541 /* ForwardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F271A1DBA9392000E6541 /* ForwardViewModel.swift */; };
+		536F271D1DBA9C6F000E6541 /* ForwardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F271C1DBA9C6F000E6541 /* ForwardController.swift */; };
 		53B9C7CB1DB90C5A0003C8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B9C7CA1DB90C5A0003C8BD /* AppDelegate.swift */; };
 		53B9C7CD1DB90C5A0003C8BD /* BindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B9C7CC1DB90C5A0003C8BD /* BindController.swift */; };
 		53B9C7D01DB90C5A0003C8BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B9C7CE1DB90C5A0003C8BD /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		5367A7EA1DBA54A400E5B788 /* TitledHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledHeaderView.swift; sourceTree = "<group>"; };
 		5367A7EC1DBA55BB00E5B788 /* TitledCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledCellView.swift; sourceTree = "<group>"; };
 		5367A7F11DBA5C6900E5B788 /* AnimatedSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSectionModel.swift; sourceTree = "<group>"; };
+		536F271A1DBA9392000E6541 /* ForwardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForwardViewModel.swift; sourceTree = "<group>"; };
+		536F271C1DBA9C6F000E6541 /* ForwardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForwardController.swift; sourceTree = "<group>"; };
 		53B9C7C71DB90C5A0003C8BD /* BindUIElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BindUIElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B9C7CA1DB90C5A0003C8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53B9C7CC1DB90C5A0003C8BD /* BindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		536F27191DBA9351000E6541 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				536F271A1DBA9392000E6541 /* ForwardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		53B9C7BE1DB90C5A0003C8BD = {
 			isa = PBXGroup;
 			children = (
@@ -135,12 +147,13 @@
 		53B9C7C91DB90C5A0003C8BD /* BindUIElements */ = {
 			isa = PBXGroup;
 			children = (
+				53B9C7D61DB90C5A0003C8BD /* Info.plist */,
 				53B9C7D11DB90C5A0003C8BD /* Assets.xcassets */,
 				53B9C7EA1DB9111E0003C8BD /* Common */,
 				53B9C7EB1DB911260003C8BD /* Controllers */,
-				53B9C7D61DB90C5A0003C8BD /* Info.plist */,
 				53566B811DB9C000000BD288 /* Models */,
 				53B9C7EC1DB9112E0003C8BD /* Storyboards */,
+				536F27191DBA9351000E6541 /* ViewModels */,
 				5324A98F1DB94122005AE0B7 /* Views */,
 			);
 			path = BindUIElements;
@@ -169,6 +182,7 @@
 				53B9C7CC1DB90C5A0003C8BD /* BindController.swift */,
 				5367A7E81DBA4CCC00E5B788 /* CollectionViewController.swift */,
 				53566B7D1DB9B0C0000BD288 /* DataController.swift */,
+				536F271C1DBA9C6F000E6541 /* ForwardController.swift */,
 				53566B7F1DB9BBC8000BD288 /* TableViewController.swift */,
 			);
 			path = Controllers;
@@ -400,12 +414,14 @@
 				53566B831DB9C018000BD288 /* Contributor.swift in Sources */,
 				53566B7E1DB9B0C1000BD288 /* DataController.swift in Sources */,
 				5367A7EB1DBA54A400E5B788 /* TitledHeaderView.swift in Sources */,
+				536F271B1DBA9392000E6541 /* ForwardViewModel.swift in Sources */,
 				5367A7F21DBA5C6900E5B788 /* AnimatedSectionModel.swift in Sources */,
 				5367A7ED1DBA55BB00E5B788 /* TitledCellView.swift in Sources */,
 				5324A9911DB94152005AE0B7 /* BorderedTextView.swift in Sources */,
 				5367A7E91DBA4CCC00E5B788 /* CollectionViewController.swift in Sources */,
 				53566B801DB9BBC8000BD288 /* TableViewController.swift in Sources */,
 				53B9C7CB1DB90C5A0003C8BD /* AppDelegate.swift in Sources */,
+				536F271D1DBA9C6F000E6541 /* ForwardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
