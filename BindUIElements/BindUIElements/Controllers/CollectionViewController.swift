@@ -10,6 +10,7 @@ import UIKit
 import RxCocoa
 import RxDataSources
 import RxSwift
+import SwiftRandom
 
 final class CollectionViewController: UIViewController {
     @IBOutlet var longPressGestureRecognizer: UILongPressGestureRecognizer!
@@ -69,7 +70,7 @@ private extension CollectionViewController {
 
             let items: [String] = {
                 var items = [String]()
-                let numberOfItems = Int(arc4random_uniform(6)) + 1
+                let numberOfItems = Int.random(0, 6)
 
                 (0 ..< numberOfItems).forEach({
                     let currentItem = "\(sectionNumber)-\($0)"

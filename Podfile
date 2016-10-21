@@ -14,6 +14,7 @@ target 'BindUIElements' do
     project 'BindUIElements/BindUIElements.xcodeproj'
 
     pod 'RxDataSources', '1.0.0-rc.2'
+    pod 'SwiftRandom'
     pod 'UIColor_Hex_Swift'
 end
 
