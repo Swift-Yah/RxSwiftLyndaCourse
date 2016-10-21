@@ -169,7 +169,7 @@
         <!--Data Controller-->
         <scene sceneID="cbd-2R-Oo5">
             <objects>
-                <viewController id="g3H-uE-icM" customClass="DataController" customModule="BindUIElements" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DataController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g3H-uE-icM" customClass="DataController" customModule="BindUIElements" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aLn-4C-XlL"/>
                         <viewControllerLayoutGuide type="bottom" id="JhW-4G-1od"/>
@@ -238,18 +238,18 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S39-G1-fnE" id="Hgf-0S-PbY">
-                                            <frame key="frameInset" width="320" height="63"/>
+                                            <frame key="frameInset" width="320" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X1a-A0-Bae">
-                                                    <frame key="frameInset" minX="15" minY="21" width="34" height="21"/>
+                                                    <frame key="frameInset" minX="15" minY="22" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sYE-tp-7db">
-                                                    <frame key="frameInset" minX="261" minY="21" width="44" height="21"/>
+                                                    <frame key="frameInset" minX="261" minY="22" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -354,20 +354,20 @@
                             <constraint firstItem="aSc-h1-anr" firstAttribute="top" secondItem="Kco-qA-SBt" secondAttribute="top" id="vEu-H9-DgU"/>
                         </constraints>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="WFN-ma-2F9" appends="YES" id="KDg-FM-TrB"/>
+                            <outletCollection property="gestureRecognizers" destination="Q5v-Yj-6XC" appends="YES" id="8MM-Om-LeG"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="JBL-Ym-IGr">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="pFF-LF-Wqu"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pFF-LF-Wqu"/>
                     </navigationItem>
                     <connections>
                         <outlet property="addBarButtonItem" destination="pFF-LF-Wqu" id="2wN-mZ-sJS"/>
                         <outlet property="collectionView" destination="aSc-h1-anr" id="fmh-vY-gF5"/>
-                        <outlet property="tapGestureRecognizer" destination="WFN-ma-2F9" id="EOU-3i-LBt"/>
+                        <outlet property="longPressGestureRecognizer" destination="Q5v-Yj-6XC" id="HVO-fK-R2a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUC-52-Ll8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="WFN-ma-2F9"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Q5v-Yj-6XC"/>
             </objects>
             <point key="canvasLocation" x="2647.5" y="550.35211267605632"/>
         </scene>

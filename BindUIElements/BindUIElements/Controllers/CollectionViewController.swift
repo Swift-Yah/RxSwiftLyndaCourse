@@ -12,7 +12,7 @@ import RxDataSources
 import RxSwift
 
 final class CollectionViewController: UIViewController {
-    @IBOutlet var tapGestureRecognizer: UITapGestureRecognizer!
+    @IBOutlet var longPressGestureRecognizer: UILongPressGestureRecognizer!
     @IBOutlet var addBarButtonItem: UIBarButtonItem!
     @IBOutlet var collectionView: UICollectionView!
 
@@ -62,5 +62,51 @@ private extension CollectionViewController {
         }
 
         data.asDriver().drive(collectionView.rx.items(dataSource: dataSource)).addDisposableTo(disposeBag)
+
+        addBarButtonItem.rx.tap.asDriver().drive(onNext: { [unowned self] in
+            let sectionNumber = self.data.value.count
+            let section = "Section: \(sectionNumber)"
+
+            let items: [String] = {
+                var items = [String]()
+                let numberOfItems = Int(arc4random_uniform(6)) + 1
+
+                (0 ..< numberOfItems).forEach({
+                    let currentItem = "\(sectionNumber)-\($0)"
+
+                    items.append(currentItem)
+                })
+
+                return items
+            }()
+
+            let data = AnimatedSectionModel(title: section, data: items)
+
+            self.data.value += [data]
+        }).addDisposableTo(disposeBag)
+
+        longPressGestureRecognizer.rx.event.subscribe(onNext: { [unowned self] in
+            switch $0.state {
+            case .began:
+                let point = $0.location(in: self.collectionView)
+
+                guard let indexPath = self.collectionView.indexPathForItem(at: point) else { break }
+
+                self.collectionView.beginInteractiveMovementForItem(at: indexPath)
+
+            case .changed:
+                guard let view = $0.view else { break }
+
+                let point = $0.location(in: view)
+
+                self.collectionView.updateInteractiveMovementTargetPosition(point)
+
+            case .ended:
+                self.collectionView.endInteractiveMovement()
+
+            default:
+                self.collectionView.cancelInteractiveMovement()
+            }
+        }).addDisposableTo(disposeBag)
     }
 }
