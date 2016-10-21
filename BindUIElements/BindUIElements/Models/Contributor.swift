@@ -20,3 +20,11 @@ struct Contributor {
         image = UIImage(named: gitHubID.capitalized)
     }
 }
+
+// MARK: CustomStringConvertible conforms
+
+extension Contributor: CustomStringConvertible {
+    var description: String {
+        return "\(name): https://github.com/\(gitHubID)"
+    }
+}

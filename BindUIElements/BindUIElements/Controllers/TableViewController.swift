@@ -13,7 +13,7 @@ import RxSwift
 final class TableViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
 
-    let data = [
+    let data = Observable.just([
         Contributor(name: "Krunoslav Zaher", gitHubID: "kzaher"),
         Contributor(name: "Yury Korolev", gitHubID: "yury"),
         Contributor(name: "Mohsenr", gitHubID: "mohsenr"),
@@ -24,41 +24,37 @@ final class TableViewController: UIViewController {
         Contributor(name: "Jesse Farless", gitHubID: "solidcell"),
         Contributor(name: "Jamie Pinkham", gitHubID: "jamiepinkham"),
         Contributor(name: "Thane Gill", gitHubID: "thanegill")
-    ]
+                               ])
+
+    let disposeBag = DisposeBag()
 }
 
-// MARK: UITableDataSource conforms
+// MARK: UIViewController functions
 
-extension TableViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableCellIdentifier") else {
-            return UITableViewCell()
-        }
+extension TableViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-        let contributor = data[indexPath.row]
-
-        cell.textLabel?.text = contributor.name
-        cell.detailTextLabel?.text = contributor.gitHubID
-        cell.imageView?.image = contributor.image
-
-        return cell
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        setUpRx()
     }
 }
 
-// MARK: UITableViewDelegate conforms
+// MARK: Private functions
 
-extension TableViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let contributor = data[indexPath.row]
+private extension TableViewController {
+    func setUpRx() {
+        data.bindTo(tableView.rx.items(cellIdentifier: "TableCellIdentifier")) { _, contributor, cell in
+            cell.textLabel?.text = contributor.name
+            cell.detailTextLabel?.text = contributor.gitHubID
+            cell.imageView?.image = contributor.image
+        }.addDisposableTo(disposeBag)
 
-        print("You selected: \(contributor)")
+        tableView.rx.modelSelected(Contributor.self).subscribe(onNext: {
+            print("You selected \($0)")
+        }).addDisposableTo(disposeBag)
 
-        UIView.animate(withDuration: 0.70) {
-            tableView.deselectRow(at: indexPath, animated: true)
-        }
+        tableView.rx.itemSelected.asDriver().drive(onNext: { [unowned self] in
+            self.tableView.deselectRow(at: $0, animated: true)
+        }).addDisposableTo(disposeBag)
     }
 }

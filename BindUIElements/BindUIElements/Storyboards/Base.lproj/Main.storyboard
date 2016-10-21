@@ -259,10 +259,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="Meb-ca-XKd" id="3dL-e0-n4Y"/>
-                                    <outlet property="delegate" destination="Meb-ca-XKd" id="j9o-tp-iMy"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
