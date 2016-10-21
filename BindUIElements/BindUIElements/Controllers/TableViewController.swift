@@ -53,8 +53,12 @@ private extension TableViewController {
             print("You selected \($0)")
         }).addDisposableTo(disposeBag)
 
-        tableView.rx.itemSelected.asDriver().drive(onNext: { [unowned self] in
-            self.tableView.deselectRow(at: $0, animated: true)
-        }).addDisposableTo(disposeBag)
+        let valueOnError = IndexPath(row: 0, section: 0)
+
+        tableView.rx.itemSelected
+            .flatMapLatest({ Observable.just($0).delaySubscription(0.35, scheduler: MainScheduler.instance) })
+            .asDriver(onErrorJustReturn: valueOnError).drive(onNext: { [unowned self] indexPath in
+                self.tableView.deselectRow(at: indexPath, animated: true)
+            }).addDisposableTo(disposeBag)
     }
 }
