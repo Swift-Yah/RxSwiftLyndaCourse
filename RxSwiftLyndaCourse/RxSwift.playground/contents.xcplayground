@@ -8,5 +8,6 @@
         <page name='CombineObservableSequences'/>
         <page name='PerformSideEffects'/>
         <page name='UseSchedulers'/>
+        <page name='Debugging'/>
     </pages>
 </playground>
