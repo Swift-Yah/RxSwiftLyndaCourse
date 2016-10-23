@@ -10,6 +10,7 @@ import UIKit
 import RxCocoa
 import RxDataSources
 import RxSwift
+import SwiftRandom
 
 final class ForwardController: UIViewController {
     @IBOutlet var tableView: UITableView!
@@ -58,5 +59,17 @@ private extension ForwardController {
             }).addDisposableTo(disposeBag)
 
         viewModel.data.bindTo(tableView.rx.items(dataSource: dataSource)).addDisposableTo(disposeBag)
+
+        tableView.rx.setDelegate(self).addDisposableTo(disposeBag)
     }
 }
+
+// MARK: UITableViewDelegate conforms
+
+extension ForwardController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat.random(32, 128)
+    }
+}
+
+
