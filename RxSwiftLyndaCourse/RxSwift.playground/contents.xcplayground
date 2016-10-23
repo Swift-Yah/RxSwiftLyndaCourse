@@ -9,5 +9,6 @@
         <page name='PerformSideEffects'/>
         <page name='UseSchedulers'/>
         <page name='Debugging'/>
+        <page name='ErrorHandling'/>
     </pages>
 </playground>

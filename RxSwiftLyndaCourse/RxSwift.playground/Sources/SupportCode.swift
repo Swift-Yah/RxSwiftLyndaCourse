@@ -5,3 +5,7 @@ public func exampleOf(_ description: String, _ action: (Void) -> Void) {
 
     action()
 }
+
+public enum ReactiveXError: Error {
+    case test
+}
