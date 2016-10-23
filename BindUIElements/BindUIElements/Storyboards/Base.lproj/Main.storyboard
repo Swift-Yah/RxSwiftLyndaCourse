@@ -235,7 +235,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCellIdentifier" textLabel="X1a-A0-Bae" detailTextLabel="sYE-tp-7db" style="IBUITableViewCellStyleValue1" id="S39-G1-fnE">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="64"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S39-G1-fnE" id="Hgf-0S-PbY">
                                             <frame key="frameInset" width="320" height="63.5"/>
@@ -294,7 +294,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCellIdentifier" textLabel="Sze-WU-bvC" detailTextLabel="Fup-dc-9Lc" style="IBUITableViewCellStyleValue1" id="ZrL-CV-Ijn">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="64"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZrL-CV-Ijn" id="U3j-ZS-hEA">
                                             <frame key="frameInset" width="320" height="63.5"/>
@@ -441,7 +441,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="OwR-J2-Rg1" kind="relationship" relationship="rootViewController" id="lqH-FM-opO"/>
+                        <segue destination="Meb-ca-XKd" kind="relationship" relationship="rootViewController" id="pl7-EU-Xgu"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkB-hr-1Si" userLabel="First Responder" sceneMemberID="firstResponder"/>

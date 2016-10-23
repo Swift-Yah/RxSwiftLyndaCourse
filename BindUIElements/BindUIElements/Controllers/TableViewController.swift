@@ -43,11 +43,12 @@ extension TableViewController {
 
 private extension TableViewController {
     func setUpRx() {
-        data.bindTo(tableView.rx.items(cellIdentifier: "TableCellIdentifier")) { _, contributor, cell in
-            cell.textLabel?.text = contributor.name
-            cell.detailTextLabel?.text = contributor.gitHubID
-            cell.imageView?.image = contributor.image
-        }.addDisposableTo(disposeBag)
+        data.asDriver(onErrorJustReturn: [])
+            .drive(tableView.rx.items(cellIdentifier: "TableCellIdentifier")) { _, contributor, cell in
+                cell.textLabel?.text = contributor.name
+                cell.detailTextLabel?.text = contributor.gitHubID
+                cell.imageView?.image = contributor.image
+            }.addDisposableTo(disposeBag)
 
         tableView.rx.modelSelected(Contributor.self).subscribe(onNext: {
             print("You selected \($0)")
