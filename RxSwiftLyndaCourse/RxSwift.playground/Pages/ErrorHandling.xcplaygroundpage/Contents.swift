@@ -139,6 +139,11 @@ exampleOf("Driver onErrorRecover") {
     subject.onNext(2)
 
     subject.onError(ReactiveXError.test)
+
+    let extraTime = Date(timeIntervalSinceNow: 0.35)
+
+    // Just to keep the execution for more 0.35 seconds to avoid the dispose of elements before all elements be printed.
+    RunLoop.current.run(until: extraTime)
 }
 
 //: [Next](@next)
