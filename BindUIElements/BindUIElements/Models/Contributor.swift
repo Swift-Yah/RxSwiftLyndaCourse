@@ -17,8 +17,11 @@ struct Contributor {
     init(name: String, gitHubID: String) {
         self.name = name
         self.gitHubID = gitHubID
+        self.image = {
+            guard let image = UIImage(named: gitHubID.pascalCase) else { return #imageLiteral(resourceName: "GitHub") }
 
-        image = UIImage(named: gitHubID.capitalized)
+            return image
+        }()
     }
 }
 
