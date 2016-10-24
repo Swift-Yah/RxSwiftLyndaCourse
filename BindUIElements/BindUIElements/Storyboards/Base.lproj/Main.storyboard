@@ -235,7 +235,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCellIdentifier" textLabel="X1a-A0-Bae" detailTextLabel="sYE-tp-7db" style="IBUITableViewCellStyleValue1" id="S39-G1-fnE">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="64"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S39-G1-fnE" id="Hgf-0S-PbY">
                                             <frame key="frameInset" width="320" height="63.5"/>
@@ -336,6 +336,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmG-lZ-Gis" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3426" y="138"/>
+        </scene>
+        <!--0 Repositories-->
+        <scene sceneID="3wj-7o-PWb">
+            <objects>
+                <viewController storyboardIdentifier="GitHubController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TYd-cL-5hR" customClass="GitHubController" customModule="BindUIElements" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nB6-Tc-bO6"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Jn-Xp-X8F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Li6-sW-Ewq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NUd-UC-It1">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GitHubCellIdentifier" textLabel="sRb-lA-jyN" detailTextLabel="E23-I1-Vs0" style="IBUITableViewCellStyleSubtitle" id="iCC-F4-AbX">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iCC-F4-AbX" id="FOV-AF-3ll">
+                                            <frame key="frameInset" width="320" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sRb-lA-jyN">
+                                                    <frame key="frameInset" minX="15" minY="14" width="34" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E23-I1-Vs0">
+                                                    <frame key="frameInset" minX="15" minY="35" width="44" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Jn-Xp-X8F" firstAttribute="top" secondItem="NUd-UC-It1" secondAttribute="bottom" id="A8u-pI-RPb"/>
+                            <constraint firstAttribute="trailing" secondItem="NUd-UC-It1" secondAttribute="trailing" id="EOu-n3-S1x"/>
+                            <constraint firstItem="NUd-UC-It1" firstAttribute="leading" secondItem="Li6-sW-Ewq" secondAttribute="leading" id="FzX-Eh-nG0"/>
+                            <constraint firstItem="NUd-UC-It1" firstAttribute="top" secondItem="Li6-sW-Ewq" secondAttribute="top" id="nrp-16-L11"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="0 Repositories" id="v7Q-uM-U7k"/>
+                    <connections>
+                        <outlet property="tableView" destination="NUd-UC-It1" id="9Jk-9W-KGz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPM-uu-kFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823" y="893"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="Zm9-jd-gCG">
@@ -441,7 +500,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Meb-ca-XKd" kind="relationship" relationship="rootViewController" id="pl7-EU-Xgu"/>
+                        <segue destination="TYd-cL-5hR" kind="relationship" relationship="rootViewController" id="C8g-m6-YJv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkB-hr-1Si" userLabel="First Responder" sceneMemberID="firstResponder"/>
