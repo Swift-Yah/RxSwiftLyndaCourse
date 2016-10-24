@@ -10,14 +10,14 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-class GitHubViewModel {
+struct GitHubViewModel {
     let disposeBag = DisposeBag()
     let searchText = Variable("")
 
-    lazy var data: Driver<[Repository]> = {
-        return self.searchText.asObservable().throttle(0.35, scheduler: MainScheduler.instance).distinctUntilChanged()
+    var data: Driver<[Repository]> {
+        return searchText.asObservable().throttle(0.35, scheduler: MainScheduler.instance).distinctUntilChanged()
             .flatMapLatest({ self.getRepositories($0) }).asDriver(onErrorJustReturn: [])
-    }()
+    }
 
     func getRepositories(_ gitHubID: String) -> Observable<[Repository]> {
         guard !gitHubID.isEmpty, let url = URL(string: "https://api.github.com/users/\(gitHubID)/repos") else {
